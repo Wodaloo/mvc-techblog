@@ -1,0 +1,21 @@
+<div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        {{#if logged_in}}
+        <a href="/">Logout</a>
+        {{/if}}
+        {{#unless logged_in}}
+        <a href="/login">Login</a>
+        {{/unless}}
+    </nav>
+
+
+    {{#each posts}}
+    <a href='/dashboard/edit/{{id}}'>
+        <h2>{{title}}</h2>
+    </a>
+    <h3>{{body}}</h3>
+    {{/each}}
+    <a href="/dashboard/newPost"><button>Make a Post</button></a>
+</div>

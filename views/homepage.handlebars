@@ -1,0 +1,25 @@
+<div>
+    <nav>
+        {{#if logged_in}}
+        <a href="/dashboard">Dashboard</a>
+        <a id="logout" href="/"> Logout</a>
+        {{/if}}
+        {{#unless logged_in}}
+
+        <a href="/login">Dashboard</a>
+        <a href="/login">Login</a>
+        {{/unless}}
+
+    </nav>
+
+
+    {{#each posts}}
+
+    <a href="/post/{{id}}">
+        <h2>{{title}} </h2>
+    </a>
+    <h3>{{body}}</h3>
+    {{/each}}
+</div>
+
+<script src="/js/logout.js"></script>
