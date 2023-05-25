@@ -9,4 +9,5 @@ This application allows users to create an account and post blog posts. Users ca
 ![image](https://github.com/Wodaloo/mvc-techblog/assets/119343529/a99f2847-7a24-4377-a71d-952f3803587f)
 
 
-
+# link-to-deployed-app
+https://mvc-tech-blog-fordays.herokuapp.com/
