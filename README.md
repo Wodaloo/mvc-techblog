@@ -11,3 +11,5 @@ This application allows users to create an account and post blog posts. Users ca
 
 # link-to-deployed-app
 https://mvc-tech-blog-fordays.herokuapp.com/
+
+# credits - Kayvon Kazemini & Mason Aviano
