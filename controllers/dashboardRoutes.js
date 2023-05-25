@@ -24,8 +24,8 @@ router.get('/', async (req, res) => {
 });
 
 
-router.get('/newPost', (req, res) => {
-    res.redirect('/newPost');
+router.get('/newPost', withAuth, (req, res) => {
+    res.redirect('newPost');
 
 });
 

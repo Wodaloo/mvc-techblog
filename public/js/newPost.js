@@ -1,4 +1,3 @@
-const { doc } = require("prettier");
 
 const editPostFormHandler = async (event) => {
     event.preventDefault();

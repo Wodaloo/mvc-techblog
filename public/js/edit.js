@@ -29,7 +29,7 @@ const deletePost = async () => {
     const postId = document.querySelector('#postId').value.trim();
     console.log(postId);
     if (postId) {
-        const response = await fetch('/api/posts/', + postId, {
+        const response = await fetch('/api/posts/' + postId, {
             method: 'DELETE',
             body: JSON.stringify({ postId }),
             headers: { 'Content-Type': 'application/json' },
@@ -47,3 +47,5 @@ document.querySelector('#edit-form')
 
 document.querySelector('#delete-btn')
     .addEventListener('click', deletePost);
+
+console.log("edit.js loaded");
